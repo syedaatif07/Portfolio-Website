@@ -2,42 +2,58 @@
     margin: 0;
     padding: 0;
 }
+html , body{
+    width: 100%;
+    height: 100%;
+}
 
 .main{
     width: 100%;
-    background: url(bg.jpg);
+    background: url(Black.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
-    position: relative;
+    /* position: relative; */
     font-family: sans-serif;
 }
 
 .navbar{
-    width: 86%;
+    width: 100%;
     display: flex;
-    margin: auto;
-    padding: 15px 0;
+    padding-left: 5.2vw;
+    
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
+    background-color:transparent;
+    color: rgb(8, 8, 73);
+    height: 15vh;    
 }
 
 .navbar .logo{
     width: 160px;
     cursor: pointer;
-    margin-top: -3%;
-    margin-left: -2%;
+    /* margin-top: -3%;
+    margin-left: -2%; */
 }
 
 ul{
-    margin-top: -4%;
+    /* margin-top: -4%; */
 }
 
 ul li{
     list-style: none;
     display: inline-block;
     padding: 45px 16px;
+    
 }
+
+.navbar ul li a:hover{
+    color: rgb(18, 130, 130);
+    font-size: 1.1rem;
+   
+
+}
+
 
 ul li a{
     font-size: 16px;
@@ -128,4 +144,50 @@ ul li a:hover{
 
 .icons ion-icon:hover{
     color: rgb(35, 173, 215);
+}
+
+
+/* responsive for mobile  355px */
+
+@media (max-width:355px) {
+    .navbar{
+        padding-left: 2.2vw;
+    }
+    ul li {
+        list-style: none;;
+        padding: 11px 8px;
+    }
+        ul li a {
+	font-size: 11px;
+	font-weight: 688;
+	text-decoration: none;
+	color: rgb(227, 233, 239);
+	margin-top: -1%;
+	transition: .4s ease;
+	
+}
+.info {
+	margin-left: 5%;
+	margin-top: -2%;
+}
+
+info h3 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: white;
+  }
+
+  .info h1 {
+    font-size: 43px;
+    color: rgb(251, 250, 249);
+  }
+
+  .info a {
+   
+    padding: 6px 28px;
+    border-radius: 7px;
+  
+  }
+    
 }
