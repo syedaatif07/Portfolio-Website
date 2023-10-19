@@ -13,8 +13,22 @@ html , body{
     background-position: center;
     background-size: cover;
     height: 100vh;
-    /* position: relative; */
+    position: relative;
     font-family: sans-serif;
+}
+
+.person-img{
+    background-image: url(https://images.unsplash.com/photo-1587837073080-448bc6a2329b?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    position: absolute;
+    width: 35%;
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+    left: 60%;
+    top:15%;
+    border-radius: 50%;
+    opacity: 0.5;
+
 }
 
 .navbar{
@@ -189,5 +203,18 @@ info h3 {
     border-radius: 7px;
   
   }
+
+  .person-img{
+   
+    width: 70%;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    left: 15%;
+    top:50%;
+    border-radius: 50%;
+    opacity: 0.5;
+
+}
     
 }
